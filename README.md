@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Table as per given constraints
+##  Table as per given constraints.
 
 ### Table: EMPLOYEE
 
@@ -62,7 +62,6 @@
 ---
 
 ## Perform following Query
-
 
 | S.No | Program | CO No |
 |-----|--------|-------|
