@@ -48,7 +48,7 @@ SELECT *
     where 
         job = 'MANAGER'
         AND 
-        DEPTNO <> 30;  -- " <> " OPERATOR is called not logical operetor which is used in sql instead of  " != "
+        DEPTNO <> 30;                                    -- " <> " OPERATOR is called not logical operetor which is used in sql instead of  " != "
 
 -- 7. List information about all Employees in department 10 who are not manager or clerks.
 
@@ -80,7 +80,7 @@ SELECT
 SELECT 
     ENAME, 
     DEPTNO
-    from employee                -- LIKE operator is used to search for a specified pattern in a column.
-    WHERE                        -- '%M' is used to find values that ends with the letter M.
-        ENAME LIKE 'M%';         -- 'M%' is used to find values that start with the letter M.
+    from employee                                               -- LIKE operator is used to search for a specified pattern in a column.
+    WHERE                       
+        ENAME LIKE 'M%';                                        -- 'M%' is used to find values that start with the letter M.
           
