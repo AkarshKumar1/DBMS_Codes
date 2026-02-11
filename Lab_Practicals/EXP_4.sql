@@ -82,22 +82,17 @@ SELECT
   
 -- 8. Update the salary of each employee by 10% increment who are not eligible for commission.
 
-SELECT
-    ENAME,
-    SAL,
-    (SAL + (SAL*0.10))AS Updated_Salary
-    FROM employee
+UPDATE employee
+    SET SAL = SAL + (SAL * 0.10)
     WHERE 
-      COMM IS NULL;
+        COMM IS NULL;
 
 -- 9. Display those employees whose salary is more than 3000 after giving 20% increment.
 
-SELECT 
-	*,
-    (SAL + (SAL * 0.20)) AS Updated_Salary
+SELECT *
     FROM employee
 	WHERE 
-      (SAL + (SAL * 0.20)) > 3000 ;
+      SAL > 3000 ;
 
 -- 10. Display those employees whose salary contains atleast 3 digits.
 
