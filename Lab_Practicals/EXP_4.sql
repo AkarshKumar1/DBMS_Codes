@@ -89,7 +89,8 @@ UPDATE employee
 
 -- 9. Display those employees whose salary is more than 3000 after giving 20% increment.
 
-SELECT *
+SELECT *,
+	SAL + (SAL * 0.20) AS New_Salary
     FROM employee
 	WHERE 
       SAL > 3000 ;
