@@ -86,6 +86,7 @@ UPDATE employee
     SET SAL = SAL + (SAL * 0.10)
     WHERE 
         COMM IS NULL;
+SELECT * FROM employee;
 
 -- 9. Display those employees whose salary is more than 3000 after giving 20% increment.
 
