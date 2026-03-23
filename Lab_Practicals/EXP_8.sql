@@ -47,6 +47,7 @@ SELECT e.ENAME AS Employee_Name,
        WHERE 
           JOB != 'CLERK'
        ORDER BY SAL DESC ;
+
 -- 5. Display employee name, his job and his manager. Display also employees who are without manager.
 
 SELECT e.ENAME AS Employee_Name,
