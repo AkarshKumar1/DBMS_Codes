@@ -7,7 +7,7 @@ USE company;
 SELECT ENAME
   FROM employee
   WHERE 
-      SAL > ANY (SELECT SAL FROM employee WHERE DEPTNO <> 10))
+      SAL > ANY (SELECT SAL FROM employee WHERE DEPTNO <> 10)
       AND 
       DEPTNO = 10;
 
@@ -17,7 +17,7 @@ SELECT ENAME
 SELECT ENAME
   FROM employee
   WHERE 
-      SAL > ALL (SELECT SAL FROM employee WHERE DEPTNO <> 10))
+      SAL > ALL (SELECT SAL FROM employee WHERE DEPTNO <> 10)
       AND 
       DEPTNO = 10;
 
