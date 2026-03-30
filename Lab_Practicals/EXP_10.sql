@@ -7,7 +7,7 @@ USE company;
 SELECT ENAME
   FROM employee
   WHERE 
-      SAL > ANY (SELECT SAL FROM employee)
+      SAL > ANY (SELECT SAL FROM employee WHERE DEPTNO <> 10))
       AND 
       DEPTNO = 10;
 
@@ -17,11 +17,11 @@ SELECT ENAME
 SELECT ENAME
   FROM employee
   WHERE 
-      SAL > ALL (SELECT SAL FROM employee)
+      SAL > ALL (SELECT SAL FROM employee WHERE DEPTNO <> 10))
       AND 
       DEPTNO = 10;
 
--- 3. Display the details of employees who are in sales dept and grade is 3.
+-- 3. Display the details of employees who are in sales dept.
 
 SELECT * 
     FROM employee
